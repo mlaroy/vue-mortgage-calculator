@@ -1,4 +1,8 @@
-# mortgage-calc
+# Vue Mortgage Calculator
+
+This project is just a proof-of-concept. I initially built a tool for a client project some years ago using jQuery, and I wanted to see if I could replicate it as a simple Vue app.
+
+
 
 ## Project setup
 ```
@@ -20,5 +24,3 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

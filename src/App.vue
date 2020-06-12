@@ -7,7 +7,7 @@
       <hr>
       <p>
         By <a href="https://mikelaroy.ca/">Michael LaRoy</a> |
-        <a href="">Github Repo</a>
+        <a href="https://github.com/mlaroy/vue-mortgage-calculator">Github Repo</a>
       </p>
     </div>
   </div>
