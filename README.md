@@ -2,7 +2,7 @@
 
 This project is just a proof-of-concept. I initially built a tool for a client project some years ago using jQuery, and I wanted to see if I could replicate it as a simple Vue app.
 
-
+See this in action on [Netlify](https://vue-mortgage-calculator.netlify.app/)
 
 ## Project setup
 ```

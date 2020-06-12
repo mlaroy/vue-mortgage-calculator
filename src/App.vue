@@ -4,6 +4,10 @@
       <h1>Mortgage Calculator</h1>
       <p>Built with Vue.</p>
       <Form />
+      <div class="disclaimer">
+        Disclaimer: This is a very simplistic tool to estimate mortgages. I created the logic based on <a href="https://en.wikipedia.org/wiki/Mortgage_calculator">this wikipedia article</a>,
+        and this should in no way be considered an authoritative reference, accurate as it may be. Talk to your bank or mortgage provider.
+      </div>
       <hr>
       <p>
         By <a href="https://mikelaroy.ca/">Michael LaRoy</a> |
@@ -38,6 +42,11 @@ export default {
 body {
   margin: 0;
   padding: 0;
+}
+
+.disclaimer {
+  margin-top: 200px;
+  font-size: 12px;
 }
 
 .container {

@@ -30,7 +30,7 @@
         </select>
       </p>
     </form>
-     <h2>Payment: {{ payment }} {{ period }}</h2>
+     <h2>Payment: <span class="payment">{{ payment }} {{ period }}</span></h2>
   </div>
 </template>
 
@@ -108,6 +108,12 @@ input {
 form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax( 400px , 1fr));
+}
+
+.payment {
+  background: yellow;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 </style>
