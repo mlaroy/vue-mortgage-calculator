@@ -1,24 +1,26 @@
 <template>
   <div>
+    <div class="payment">
+      <span class="total">{{ payment }}</span>
+      {{ period }}
+    </div>
     <form>
-      <p>
-        <label for="principal">Principal Amount <br>
-          <input type="number" id="principal" v-model="principal" step="1000" placeholder="0">
-        </label>
-      </p>
-      <p>
-        <label for="interestRate">Interest Rate <br>
-          <input type="number" id="interestRate" v-model="interestRate" step=".01" placeholder="3.9%">
-        </label>
-      </p>
-      <p>
-        <label for="frequency">Payment Frequency</label><br>
+      <div>
+        <label for="principal">Principal Amount</label>
+        <input type="number" id="principal" v-model="principal" step="1000" placeholder="0" />
+      </div>
+      <div>
+          <label for="interestRate">Interest Rate</label>
+          <input type="number" id="interestRate" v-model="interestRate" step=".01" placeholder="3.9%" />
+      </div>
+      <div>
+        <label for="frequency">Payment Frequency</label>
         <select v-model="frequency" id="frequency" ref="frequency">
           <option v-for="item in frequencies" :value="item.value" :key="item.value">{{ item.label }}</option>
         </select>
-      </p>
-      <p>
-        <label for="amortization">Amortization</label><br>
+      </div>
+      <div>
+        <label for="amortization">Amortization</label>
         <select id="amortization" v-model="amortization">
           <option value="1">1 Year</option>
           <option value="3">3 Years</option>
@@ -28,9 +30,9 @@
           <option value="25">25 Years</option>
           <option value="30">30 Years</option>
         </select>
-      </p>
+      </div>
     </form>
-     <h2>Payment: <span class="payment">{{ payment }} {{ period }}</span></h2>
+
   </div>
 </template>
 
@@ -103,17 +105,36 @@ input {
   border-radius: 4px;
   padding: 0.75rem;
   font-size: 16px;
+  width: 100%;
 }
 
 form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax( 400px , 1fr));
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, minmax(400px, 1fr) );
+   /* padding: 25px; */
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .payment {
-  background: yellow;
+  background: white;
   border-radius: 3px;
-  padding: 4px;
+  padding: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.total {
+  display: block;
+  font-size: 56px;
 }
 
 </style>

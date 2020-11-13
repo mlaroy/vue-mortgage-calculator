@@ -2,7 +2,6 @@
   <div id="app">
     <div class="container">
       <h1>Mortgage Calculator</h1>
-      <p>Built with Vue.</p>
       <Form />
       <div class="disclaimer">
         Disclaimer: This is a very simplistic tool to estimate mortgages. I created the logic based on <a href="https://en.wikipedia.org/wiki/Mortgage_calculator">this wikipedia article</a>,
@@ -42,6 +41,13 @@ export default {
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 .disclaimer {
