@@ -111,7 +111,7 @@ input {
 form {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(2, minmax(400px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    /* padding: 25px; */
 }
 
